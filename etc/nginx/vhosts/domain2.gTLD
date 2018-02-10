@@ -3,9 +3,9 @@ server {
 	listen 8080;
 	listen [::]:80;
 	listen [::]:8080;
-	server_name domain1.gtld;
-	access_log /var/log/nginx/domain1.gtld/domain1.gtld.access.log;
-	root /usr/local/nginx/domain1.gtld/domain1.gtld;
+	server_name domain2.gtld;
+	access_log /var/log/nginx/domain2.gtld/domain2.gtld.access.log;
+	root /usr/local/nginx/domain2.gtld/domain2.gtld;
 	index index.html;
 	location / {
 		try_files $uri $uri/ =404;
